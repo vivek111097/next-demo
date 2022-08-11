@@ -13,7 +13,7 @@ module.exports.header = [
     ],
   },
   { link: "Contact",path:"/contact" },
-  { btn_link: "Get Started" },
+  { btn_link: "Get Started",path:"/" },
 ];
 
 

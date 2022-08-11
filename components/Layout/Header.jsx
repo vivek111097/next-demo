@@ -28,7 +28,7 @@ const Header = () => {
                   <ul>
                     {link.drpdwn.map((drpdown) => [
                       <li>
-                        <Link href="">
+                        <Link href="/">
                           <a>{drpdown}</a>
                         </Link>
                       </li>,
@@ -39,8 +39,8 @@ const Header = () => {
 
               <li>
                 <Link
+                href={{pathname:link.path}}
                   className="nav-link scrollto"
-                  onClick={() => router.push(link.path)}
                 >
                   <a>{link.link}</a>
                 </Link>
@@ -48,7 +48,7 @@ const Header = () => {
 
               link.btn_link && (
                 <li>
-                  <Link href="">
+                  <Link href="#">
                     <a className="getstarted scrollto">{link.btn_link}</a>
                   </Link>
                 </li>
